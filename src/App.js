@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./CSS/app.css";
+import Game from "./Game";
+import Login from "./Login";
+//import { DataBucket } from "./DataLayer";
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 function App() {
+  //const [{ token }] = DataBucket();
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app-main">
+        <Routes>
+          <Route path = '/game' element = {<Game />}/>
+          <Route path = '/' element = {<Login />}/>
+        </Routes>
+      </div>
+    </Router>
+
+    // <div className = 'app-main'>
+    //   <Login />
+    // </div>
   );
 }
 

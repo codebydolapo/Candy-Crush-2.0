@@ -1,0 +1,262 @@
+.login-main {
+  width: 100vw;
+  height: 100vh;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.authentication-div {
+  /* border: 1px solid white; */
+  width: 350px;
+  height: 110px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+:is(.google-auth, .email-auth) {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #e91881;
+  text-transform: capitalize;
+}
+
+:is(.google-auth, .email-auth):hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+:is(.google-auth > img, .email-auth > img) {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+.app-main {
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/3060297.webp") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+.game-main {
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/3060297.webp") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+.gameboard-main {
+  width: 480px;
+  height: 480px;
+  /* border: 2px solid white; */
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gameboard-main > img{
+    width: 60px;
+    height: 60px;
+}
+
+.scoreboard-main {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-right: 2vw;
+  margin-left: 10vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.score-avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name-score{
+  width: 90%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  flex-direction: column;
+  color: rgb(240, 10, 117);
+  
+}
+
+@media only screen and (max-width: 700px){
+  .login-main {
+  width: 100vw;
+  height: 100vh;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.authentication-div {
+  /* border: 1px solid white; */
+  width: 300px;
+  height: 110px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+:is(.google-auth, .email-auth) {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #e91881;
+  text-transform: capitalize;
+}
+
+:is(.google-auth, .email-auth):hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+:is(.google-auth > img, .email-auth > img) {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+.app-main {
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/3060297.webp") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+.game-main {
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/3060297.webp") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+
+.gameboard-main {
+  width: 320px;
+  height: 320px;
+  /* border: 2px solid white; */
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gameboard-main > img{
+    width: 40px;
+    height: 40px;
+}
+
+.scoreboard-main {
+  width: 90vw;
+  height: 100px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.score-avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name-score{
+  width: 90%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  flex-direction: column;
+  color: rgb(240, 10, 117);
+  
+}
+
+
+}
