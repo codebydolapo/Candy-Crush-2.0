@@ -51,10 +51,10 @@ function Login() {
           <img src={google} alt="" />
           <h4>Sign In With Google</h4>
         </div>
-        {/* <div className="email-auth">
+        <div className="email-auth">
           <img src={mail} alt="" />
           <h4>Sign In With Email</h4>
-        </div> */}
+        </div>
       </div>
     </div>
   );

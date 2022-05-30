@@ -41,8 +41,8 @@
 }
 
 :is(.google-auth > img, .email-auth > img) {
-  width: 30px;
-  height: 30px;
+  max-width: 30px;
+  max-height: 30px;
   margin-right: 10px;
 }
 
@@ -172,8 +172,8 @@
 }
 
 :is(.google-auth > img, .email-auth > img) {
-  width: 30px;
-  height: 30px;
+  max-width: 30px;
+  max-height: 30px;
   margin-right: 10px;
 }
 
