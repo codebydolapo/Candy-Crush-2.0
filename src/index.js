@@ -6,6 +6,11 @@ import reducer, { initialState } from "./reducer";
 import {DataWrapper} from './DataLayer'
 
 function Index() {
+
+  const music = new Audio("./sound.mp3");
+  music.play();
+  music.loop = true;
+  music.playbackRate = 1;
   
 
   
